@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:convert';
 
 import '../../request/RequestLogin.dart';
@@ -32,6 +31,7 @@ class _Account extends State<Account> {
     }
   }
 
+  // ignore: non_constant_identifier_names
   var Course = List<JsonMatterSearch>();
   _Account(){
     APILOGIN.CourserAll().then((response){
@@ -45,6 +45,7 @@ class _Account extends State<Account> {
   List<String> matter = [];
   List<bool> checkedValue = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
 
+  // ignore: non_constant_identifier_names
   Widget CheckWidget(id, Title, index) {
     if(Title == "" || Title ==null){
       return Container();

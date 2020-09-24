@@ -16,6 +16,7 @@ class API{
   static Future Matter(id) async{
     return await http.get(ip+'/Course/search/'+id.toString());
   }
+  // ignore: non_constant_identifier_names
   static Future Episteme(type) async{
     return await http.get(ip+'/Episteme/type/'+type.toString());
   }

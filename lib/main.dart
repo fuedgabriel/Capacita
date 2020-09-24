@@ -1,6 +1,5 @@
 import 'package:Capacita/screen/Account/Login.dart';
 import 'package:flutter/material.dart';
-import 'screen/Account/Account.dart';
 import 'screen/Widget/BottonBar.dart';
 
 

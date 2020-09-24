@@ -27,6 +27,8 @@ dependencies:
   http: ^0.12.2
   crypto: ^2.1.5
   shared_preferences: ^0.5.10
+  url_launcher: ^5.5.3
+  percent_indicator: "^2.1.7"
 
 
 dev_dependencies:
@@ -38,6 +40,7 @@ flutter:
   assets:
     - assets/images/Logo.png
     - assets/images/Icon.png
+    - assets/images/fundo.jpg
 
   uses-material-design: true
 

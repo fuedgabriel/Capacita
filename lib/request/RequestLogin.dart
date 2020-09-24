@@ -20,6 +20,7 @@ class ListJson {
 
 class APILOGIN{
 
+  // ignore: non_constant_identifier_names
   static Future CourserAll() async{
     return await http.get('http://animeseempresa.servehttp.com:7844/api/Course/all');
   }
@@ -41,6 +42,7 @@ class APILOGIN{
   }
 
 
+  // ignore: non_constant_identifier_names, missing_return
   static Future<http.Response> postAccount (Name, Email, Password, Matricula, List<String> matter,) async {
     for(int i = matter.length; i <= 5; i++){
       matter.add("");

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 //page
-//import '../Config/Config.dart';
-//import '../Matter/Matter.dart';
-//import '../Home/Home.dart';
+import '../Config/Config.dart';
+import '../Matter/Matter.dart';
+import '../Home/Home.dart';
 //import '../News/News.dart';
 //import '../Simulator/Simulator.dart';
 
@@ -12,7 +12,7 @@ class BottonBar extends StatefulWidget {
 }
 
 class _BottonBar extends State<BottonBar> {
-  int _currentIndex = 2;
+  int _currentIndex = 0;
   PageController _c;
   @override
   void initState(){
@@ -22,22 +22,29 @@ class _BottonBar extends State<BottonBar> {
     super.initState();
   }
   final tabs = [
-//    Matter(),
+    Matter(),
 //    News(),
-//    Home(),
+    Home(),
 //    Simulator(),
-//    Config()
+    Config()
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: Theme(
+        data: Theme.of(context).copyWith(
+          // sets the background color of the `BottomNavigationBar`
+            canvasColor: Colors.white,
+              // sets the active color of the `BottomNavigationBar` if `Brightness` is light
+            primaryColor: Colors.red,
+            textTheme: Theme.of(context).textTheme.copyWith(caption: TextStyle(color: Colors.yellow))), // sets the inactive color of the `BottomNavigationBar`
+        child:BottomNavigationBar(
           elevation: 10,
           type: BottomNavigationBarType.shifting,
           currentIndex: _currentIndex,
           unselectedItemColor: Colors.grey,
-          selectedItemColor: Colors.amber[800],
+          selectedItemColor: Colors.orangeAccent,
           backgroundColor: Colors.grey,
           unselectedLabelStyle: TextStyle(
               color: Colors.grey
@@ -70,7 +77,7 @@ class _BottonBar extends State<BottonBar> {
               this._c.jumpToPage(index);
             });
           },
-        ),
+        ),),
       body: PageView(
         controller: _c,
 
@@ -80,11 +87,11 @@ class _BottonBar extends State<BottonBar> {
           });
         },
         children: <Widget>[
-//          Matter(),
+          Matter(),
 //          News(),
-//          Home(),
+          Home(),
 //          Simulator(),
-//          Config()
+          Config()
         ],
       ),
     );
