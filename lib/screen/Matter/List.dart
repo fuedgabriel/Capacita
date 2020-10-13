@@ -1,7 +1,6 @@
 import 'dart:convert';
-//import 'package:Imperium/screens/Widget/hex_color.dart';
 import 'package:flutter/material.dart';
-//import 'Class/BottonBar.dart';
+import 'Class/BottonBar.dart';
 import '../../request/RequestMatter.dart';
 import '../../request/Json/Matter/JsonMatterSearch.dart';
 
@@ -34,7 +33,7 @@ class _ListMatterState extends State<ListMatter> {
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing:0,),
                     scrollDirection: Axis.vertical,
                     itemCount: search.length,
-                    padding: EdgeInsets.only(left: 5, top: 0,right: 0,bottom: 0),
+                    padding: EdgeInsets.only(left: 15, top: 0,right: 10,bottom: 0),
                     itemBuilder: (context, index) {
                       return Center(
                         child: Row(
@@ -42,14 +41,14 @@ class _ListMatterState extends State<ListMatter> {
                             Container(
                               width: MediaQuery.of(context).size.width * 0.45,
                               child: Card(
-                                color: Colors.amber[800],
                                 elevation: 10,
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0)
+                                  borderRadius: BorderRadius.circular(10.0)
                                 ),
                                 child: Container(
                                   height: 160,
                                   decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.0),
                                       gradient: LinearGradient(
                                           begin: Alignment.topLeft,
                                           end: Alignment.bottomRight,
@@ -60,11 +59,12 @@ class _ListMatterState extends State<ListMatter> {
                                             0.9
                                           ],
                                           colors: [
-                                            Colors.orange[600],
-                                            Colors.orange[600],
-                                            Colors.orange[500],
-                                            Colors.blue[800]
-                                          ])),
+                                            Color.fromRGBO(242, 162, 2, 1),
+                                            Color.fromRGBO(242, 162, 2, 1),
+                                            Color.fromRGBO(242, 162, 2, 1),
+                                            Color.fromRGBO(14, 91, 255, 1)
+                                          ])
+                                  ),
                                   child: GestureDetector(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -76,6 +76,7 @@ class _ListMatterState extends State<ListMatter> {
                                           height: 120,
                                         ),
                                         Padding(padding: EdgeInsets.only(top: 4),),
+
                                         Center(
                                           child: Text(
                                             search[index].title,
@@ -88,7 +89,7 @@ class _ListMatterState extends State<ListMatter> {
                                       ],
                                     ),
                                     onTap: (){
-//                                      Navigator.push(context, MaterialPageRoute(builder: (context) => BottonBar(search[index].sId, search[index].title)));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => BottonBar(search[index].sId, search[index].title)));
                                     },
                                   ),
                                 ),
@@ -110,12 +111,13 @@ class _ListMatterState extends State<ListMatter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(0.79),
+      backgroundColor: Colors.white.withOpacity(0.78),
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor: Color.fromRGBO(242, 162, 2, 1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(0), bottom: Radius.circular(40)),),
         title: Padding(padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.15), child: Center(child: Text('Matérias',) ),
-      ),),
+        ),
+      ),
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(

@@ -170,16 +170,16 @@ class _Account extends State<Account> {
               ),
             ),
           ),
-          SizedBox(height: 10,),
-          ListView.builder(
-            shrinkWrap: true,
-            scrollDirection: Axis.vertical,
-            itemCount: Course.length,
-            itemBuilder: (BuildContext context, int index) {
-              return CheckWidget(Course[index].sId, Course[index].title, index);
-            },
-          ),
-          SizedBox(height: 20,),
+          SizedBox(height: 40,),
+//          ListView.builder(
+//            shrinkWrap: true,
+//            scrollDirection: Axis.vertical,
+//            itemCount: Course.length,
+//            itemBuilder: (BuildContext context, int index) {
+//              return CheckWidget(Course[index].sId, Course[index].title, index);
+//            },
+//          ),
+//          SizedBox(height: 20,),
           Container(
             padding: EdgeInsets.only(left: 40, right: 40,),
             height: 45,

@@ -81,32 +81,18 @@ class _Home extends State<Home> {
                 padding: EdgeInsets.only(top: 20,),
                 children: <Widget>[
                   Image(image: AssetImage("assets/images/Logo.png"), height: 120,),
-//                  Container(
-//                    margin: EdgeInsets.only(left: 50, right: 50),
-//                    height: 200,
-//                    child: Card(
-//
-//                      color: Colors.blue,
-//                      child: Column(
-//                        crossAxisAlignment: CrossAxisAlignment.center,
-//                        children: [
-//                          Image(image: NetworkImage('https://files.passeidireto.com/Thumbnail/7ffed3bb-4c54-45fc-80f0-025701cb302c/210/1.jpg',),width: 80,),
-//                          Text("oiiiioioi")
-//                        ],
-//                      ),
-//                    ),
-//                  ),
+
                   Container(
                     height: 286,
                     width: double.infinity,
                     child: ListView.builder(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0,),
+                      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0),
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (BuildContext context, int index) {
                         return Card(
                           semanticContainer: true,
-                          color: Colors.blue[900],
+                          color: Color.fromRGBO(14, 91, 255, 1),
                           clipBehavior: Clip.antiAliasWithSaveLayer,
                           child: Column(
                             children: [
@@ -152,7 +138,7 @@ class _Home extends State<Home> {
                           width: 140.0,
                           height: 140.0,
                           decoration: BoxDecoration(
-                              color: Colors.orange,
+                            color: Color.fromRGBO(242, 162, 2, 1),
                               shape: BoxShape.circle,
                           ),
                           margin: EdgeInsets.only(bottom: 10),
@@ -162,7 +148,7 @@ class _Home extends State<Home> {
                           width: 160,
                           height: 40,
                           child: Card(
-                            color: Colors.blue,
+                            color: Color.fromRGBO(14, 91, 255, 1),
                             child: Center(
                               child: Text("NÍVEL", style: TextStyle(color: Colors.white, fontSize: 24),
                               ),
@@ -179,20 +165,7 @@ class _Home extends State<Home> {
 
 
 
-                  Padding(
-                    padding: EdgeInsets.only(left: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Continue sua jornada", style: TextStyle(fontSize: 18, color: Colors.black),),
-                        IconButton(
-                          icon: Icon(Icons.arrow_forward_ios, color: Colors.black,),
-                          onPressed: (){
 
-                          },)
-                      ],
-                    ),
-                  ),
                   ContentScrollExercise(newsTitle: Names,),
                 ]
             )

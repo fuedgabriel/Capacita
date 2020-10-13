@@ -55,10 +55,6 @@ class _BottonBar extends State<BottonBar> {
               title: Text('Matérias'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.notifications),
-              title: Text('Notícias'),
-            ),
-            BottomNavigationBarItem(
               icon: Icon(Icons.home),
               title: Text('Início'),
             ),
