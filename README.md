@@ -2,5 +2,5 @@
 
 ## study app
 
-![Mobile Screenshot 1](screenshots/pub.png)
+![Mobile Screenshot 1](screenshots/pub.jpg)
 
