@@ -3,7 +3,7 @@
 ## study app
 
 
-<img src="/screenshots/pub.jpg" height=180 >
+<img src="/screenshots/pub.jpg" height=300 width=300>
 
 
 
