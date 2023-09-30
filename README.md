@@ -4,7 +4,7 @@
 
 
 <img src="/screenshots/pub.jpg" height=400 width=400>
-<img src="/screenshots/login.jpg" height=300 width=844>
+<img src="/screenshots/login.jpg" height=844 width=390>
 <img src="/screenshots/create.jpg" height=300 width=500>
 <img src="/screenshots/home.jpg" height=300 width=500>
 <img src="/screenshots/materias.jpg" height=300 width=500>
