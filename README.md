@@ -1,12 +1,12 @@
 # Flutter Capacita  | Mobile
 
-<img src="/screenshots/logo.jpg" height=400 width=400>
+<img src="/screenshots/logo.jpg">
 ## study app
 
 
 <img src="/screenshots/pub.jpg" height=400 width=400>
 
-![Mobile Screenshot 1 style="max-width: 50%";](screenshots/login.jpg)
+![Mobile Screenshot 1 ](screenshots/login.jpg)
 ![Mobile Screenshot 2](screenshots/create.jpg)
 ![Mobile Screenshot 3](screenshots/home.jpg)
 ![Mobile Screenshot 4](screenshots/materias.jpg)
