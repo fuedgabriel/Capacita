@@ -2,5 +2,9 @@
 
 ## study app
 
-![Mobile Screenshot 1](screenshots/pub.jpg)
+
+<img src="/screenshots/pub.jpg">
+
+
+
 
