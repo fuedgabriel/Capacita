@@ -1,6 +1,6 @@
 # Flutter Capacita  | Mobile
 
-<img src="/screenshots/logo.jpg">
+<img src="./screenshots/logo.jpg">
 ## study app
 
 
