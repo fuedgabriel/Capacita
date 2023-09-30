@@ -1,6 +1,6 @@
 # Flutter Capacita  | `Mobile study app`
 
-<img src="/screenshots/Logo.jpg">
+<img src="/screenshots/Logo.png">
 
 
 <img src="/screenshots/pub.jpg" height=400 width=400>
